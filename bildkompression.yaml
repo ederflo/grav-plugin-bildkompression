@@ -1,0 +1,9 @@
+enabled: true
+
+# Laengste Bildkante in Pixel. 2560 reicht fuer das Titelbild (2200 px)
+# und fuer die Vollbild-Ansicht der Galerie am Laptop.
+max_kante: 2560
+
+# 82 ist mit freiem Auge nicht vom Original zu unterscheiden.
+jpeg_qualitaet: 82
+webp_qualitaet: 80

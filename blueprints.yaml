@@ -1,0 +1,38 @@
+name: Bildkompression
+version: 1.0.0
+description: 'Verkleinert hochgeladene Bilder gleich nach dem Upload (spart Speicher, Seite lädt schneller, entfernt GPS-Daten).'
+icon: compress
+author:
+  name: 'Florian Eder'
+homepage: ''
+keywords: bilder, upload, kompression
+bugs: ''
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin aktiviert
+      highlight: 1
+      default: 1
+      options: { 1: Ja, 0: Nein }
+      validate: { type: bool }
+    max_kante:
+      type: number
+      label: 'Längste Kante (Pixel)'
+      help: 'Größere Bilder werden auf diese Kantenlänge verkleinert.'
+      default: 2560
+      validate: { min: 800, max: 8000 }
+    jpeg_qualitaet:
+      type: number
+      label: 'JPEG-Qualität'
+      help: '60–95. Niedriger = kleinere Dateien.'
+      default: 82
+      validate: { min: 50, max: 95 }
+    webp_qualitaet:
+      type: number
+      label: 'WebP-Qualität'
+      default: 80
+      validate: { min: 50, max: 95 }
