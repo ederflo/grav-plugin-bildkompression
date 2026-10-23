@@ -7,7 +7,7 @@
  * die Galerie öffnet es beim Antippen ganz. Dieses Plugin verkleinert darum
  * jedes Bild gleich nach dem Upload (Admin 2 / API-Plugin) an Ort und Stelle.
  *
- * Quelle: /usr/local/share/grav-bildkompression  ->  verteilt mit grav-bildkompression-deploy.sh
+ * https://github.com/ederflo/grav-plugin-bildkompression (MIT)
  */
 namespace Grav\Plugin;
 
