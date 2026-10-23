@@ -16,8 +16,8 @@ deliver it. This plugin replaces the upload in place with a sensible size.
 - Anything that cannot be processed (animated WebP, broken files) simply stays original;
   the Grav log notes what happened
 
-Measured on a real photo: 4000 × 3000 px became 2560 × 1920 px at 1.3 MB. The output size depends
-mainly on the target size and quality, so a 10 to 20 MB original shrinks to a similar 1 to 2 MB.
+In production on a Grav 2 site: 447 uploaded phone photos, median 12.9 MB before and 0.7 MB after
+(0.2 to 1.3 MB). Together 5.9 GB became 290 MB.
 
 ## Requirements
 

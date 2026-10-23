@@ -2,7 +2,7 @@ name: Bildkompression
 slug: bildkompression
 type: plugin
 version: 1.0.0
-description: 'Shrinks images right after they are uploaded in Admin 2: phone photos of 10 to 20 MB end up at 1 to 2 MB, EXIF data including the GPS location is removed, orientation is kept.'
+description: 'Shrinks images right after they are uploaded in Admin 2: phone photos of 10 to 20 MB end up below 1 MB, EXIF data including the GPS location is removed, orientation is kept.'
 icon: compress
 author:
   name: Florian Eder
