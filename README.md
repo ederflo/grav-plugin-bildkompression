@@ -45,12 +45,25 @@ plugin settings in the admin panel:
 | `jpeg_qualitaet` | `82` | JPEG quality (50 to 95). 82 is hard to tell apart from the original. |
 | `webp_qualitaet` | `80` | WebP quality (50 to 95). |
 
+## Tests
+
+Plain PHP scripts, no Composer or PHPUnit needed; they only need PHP with GD and exif. The test
+images, including an EXIF block with a made-up GPS position, are generated on the fly, and Grav is
+replaced by small stubs in `tests/stubs.php`.
+
+```bash
+php tests/alle.php          # everything, exit code 1 if a check fails
+php tests/verkleinern.php   # size limit, JPEG quality, EXIF/GPS removal, orientation, small images
+php tests/plugin.php        # upload event for pages and user://media, settings, file names
+```
+
 ## Deutsch in Kürze
 
 Verkleinert Bilder gleich nach dem Upload im Admin 2 auf höchstens 2560 px, entfernt die
 EXIF-Daten samt GPS-Standort und behält die Ausrichtung. Braucht Grav 2 mit Admin 2 und
 API-Plugin sowie PHP GD. Installation: nach `user/plugins/bildkompression` entpacken,
 Cache leeren.
+Tests: `php tests/alle.php` (ohne Composer, Testbilder entstehen beim Lauf).
 
 ## License
 
